@@ -32,8 +32,6 @@ body {
     padding: 18px 14px 60px;
 }
 
-/* HEADER */
-
 .hero {
     text-align: center;
     padding: 25px 8px 28px;
@@ -67,8 +65,6 @@ body {
     line-height: 1.5;
 }
 
-/* NOTICE */
-
 .notice {
     background: #fff;
     border-radius: 21px;
@@ -88,8 +84,6 @@ body {
     font-size: 15px;
     line-height: 1.5;
 }
-
-/* STEP */
 
 .step {
     background: #fff;
@@ -129,8 +123,6 @@ body {
     margin-top: 12px;
 }
 
-/* SCREENSHOTS */
-
 .screenshot {
     width: 100%;
     max-width: 100%;
@@ -144,8 +136,6 @@ body {
 .screenshot + .screenshot {
     margin-top: 14px;
 }
-
-/* ACCOUNT */
 
 .account {
     margin-top: 20px;
@@ -210,8 +200,6 @@ body {
     white-space: nowrap;
 }
 
-/* BUTTON */
-
 .button {
     display: block;
     text-decoration: none;
@@ -231,8 +219,6 @@ body {
     opacity: .8;
 }
 
-/* WARNING */
-
 .warning {
     background: #fff4d6;
     border-radius: 15px;
@@ -241,8 +227,6 @@ body {
     font-size: 14px;
     line-height: 1.5;
 }
-
-/* FINISH */
 
 .finish {
     text-align: center;
@@ -265,8 +249,6 @@ body {
     line-height: 1.5;
 }
 
-/* FOOTER */
-
 .footer {
     text-align: center;
     color: #8e8e93;
@@ -274,8 +256,6 @@ body {
     line-height: 1.5;
     margin-top: 25px;
 }
-
-/* FULLSCREEN IMAGE */
 
 .viewer {
     display: none;
@@ -312,8 +292,6 @@ body {
     z-index: 10000;
 }
 
-/* MOBILE */
-
 @media(max-width:500px) {
 
     .hero h1 {
@@ -343,8 +321,6 @@ body {
 
 <div class="container">
 
-<!-- HEADER -->
-
 <header class="hero">
 
     <div class="logo">📱</div>
@@ -358,8 +334,6 @@ body {
 
 </header>
 
-
-<!-- NOTICE -->
 
 <div class="notice">
 
@@ -377,7 +351,7 @@ body {
 </div>
 
 
-<!-- STEP 1 -->
+<!-- ШАГ 1 -->
 
 <section class="step">
 
@@ -401,7 +375,7 @@ body {
 </section>
 
 
-<!-- STEP 2 -->
+<!-- ШАГ 2 -->
 
 <section class="step">
 
@@ -411,81 +385,80 @@ body {
 
     <p>
         Найдите раздел «Контент и покупки».
-        Если там уже выполнен вход в другой аккаунт,
-        сначала выйдите из него.
+        <strong>Выйдите со своего аккаунта.</strong>
     </p>
 
     <img
         class="screenshot"
         src="https://github.com/bosskin-pro/install-guide/releases/download/v1/IMG_8151.png"
-        alt="Шаг 2 — Контент и покупки"
+        alt="Шаг 2"
         onclick="openImage(this.src)"
     >
 
     <img
         class="screenshot"
         src="https://github.com/bosskin-pro/install-guide/releases/download/v1/IMG_8152.png"
-        alt="Шаг 2 — Контент и покупки"
+        alt="Шаг 2"
         onclick="openImage(this.src)"
     >
 
     <img
         class="screenshot"
         src="https://github.com/bosskin-pro/install-guide/releases/download/v1/IMG_8153.png"
-        alt="Шаг 2 — Контент и покупки"
+        alt="Шаг 2"
         onclick="openImage(this.src)"
     >
 
 </section>
 
 
-<!-- STEP 3 -->
+<!-- ШАГ 3 -->
 
 <section class="step">
 
     <div class="number">3</div>
 
-    <h2>Сначала выполните вход</h2>
+    <h2>Введите данные аккаунта</h2>
 
     <p>
-        Следуйте действиям, показанным на фотографиях ниже.
-        Сначала нажмите необходимые пункты на экране
-        iPhone или iPad, а после этого введите данные
-        предоставленного аккаунта.
+        Сначала выполните действия, показанные
+        на фотографиях ниже. После этого введите
+        данные предоставленного аккаунта.
     </p>
 
-    <!-- PHOTOS FIRST -->
+
+    <!-- ФОТОГРАФИИ -->
 
     <img
         class="screenshot"
         src="https://github.com/bosskin-pro/install-guide/releases/download/v1/IMG_8154.png"
-        alt="Шаг 3 — вход"
+        alt="Шаг 3"
         onclick="openImage(this.src)"
     >
 
     <img
         class="screenshot"
         src="https://github.com/bosskin-pro/install-guide/releases/download/v1/IMG_8156.png"
-        alt="Шаг 3 — вход"
+        alt="Шаг 3"
         onclick="openImage(this.src)"
     >
 
     <img
         class="screenshot"
         src="https://github.com/bosskin-pro/install-guide/releases/download/v1/IMG_8157.png"
-        alt="Шаг 3 — вход"
+        alt="Шаг 3"
         onclick="openImage(this.src)"
     >
 
     <img
         class="screenshot"
         src="https://github.com/bosskin-pro/install-guide/releases/download/v1/IMG_8158.png"
-        alt="Шаг 3 — вход"
+        alt="Шаг 3"
         onclick="openImage(this.src)"
     >
 
 
-    <!-- ACCOUNT DATA -->
+    <!-- ДАННЫЕ АККАУНТА -->
 
     <div class="account">
 
@@ -552,14 +525,14 @@ body {
     <div class="warning">
         🔐 После ввода Apple ID и пароля потребуется
         ввести <strong>6-значный код подтверждения</strong>.
-        Код появится на вашем доверенном устройстве.
-        Введите его в появившееся на экране поле.
+        Код подтверждения я отправлю вам в переписке.
+        Введите полученный код в появившееся на экране поле.
     </div>
 
 </section>
 
 
-<!-- STEP 4 -->
+<!-- ШАГ 4 -->
 
 <section class="step">
 
@@ -588,7 +561,7 @@ body {
 </section>
 
 
-<!-- STEP 5 -->
+<!-- ШАГ 5 -->
 
 <section class="step">
 
@@ -597,20 +570,25 @@ body {
     <h2>Установите нужные приложения</h2>
 
     <p>
-        После установки Boss of Bumper вернитесь
-        к инструкции и установите необходимые вам
-        приложения.
+        После установки Boss of Bumper перейдите
+        по ссылкам, которые вам скинули, и установите
+        необходимые вам приложения.
+    </p>
+
+    <p>
+        После установки обязательно запустите
+        приложения и убедитесь, что они работают.
     </p>
 
     <div class="warning">
-        📦 Установите все необходимые приложения
-        перед переходом к следующему шагу.
+        📦 Установите и запустите все необходимые
+        приложения перед переходом к следующему шагу.
     </div>
 
 </section>
 
 
-<!-- STEP 6 -->
+<!-- ШАГ 6 -->
 
 <section class="step">
 
@@ -619,8 +597,8 @@ body {
     <h2>Вернитесь в свой аккаунт</h2>
 
     <p>
-        После установки всех нужных приложений откройте
-        настройки вашего iPhone или iPad и перейдите:
+        После установки и запуска всех нужных приложений
+        откройте настройки вашего iPhone или iPad и перейдите:
         <strong>Apple Account → Контент и покупки</strong>.
     </p>
 
@@ -638,7 +616,7 @@ body {
 </section>
 
 
-<!-- STEP 7 -->
+<!-- ШАГ 7 -->
 
 <section class="step">
 
@@ -666,7 +644,7 @@ body {
 </section>
 
 
-<!-- FINISH -->
+<!-- ЗАВЕРШЕНИЕ -->
 
 <div class="finish">
 
@@ -690,7 +668,7 @@ body {
 </div>
 
 
-<!-- IMAGE VIEWER -->
+<!-- ПРОСМОТР ФОТО -->
 
 <div
     class="viewer"
@@ -716,16 +694,12 @@ body {
 
 <script>
 
-/* ==========================================
-   ПАРОЛЬ
-   ========================================== */
+/* ПАРОЛЬ */
 
 const APP_PASSWORD = "70635964ALEx";
 
 
-/* ==========================================
-   ПОКАЗАТЬ / СКРЫТЬ ПАРОЛЬ
-   ========================================== */
+/* ПОКАЗАТЬ / СКРЫТЬ ПАРОЛЬ */
 
 let passwordVisible = false;
 
@@ -750,9 +724,7 @@ function togglePassword() {
 }
 
 
-/* ==========================================
-   КОПИРОВАТЬ ПАРОЛЬ
-   ========================================== */
+/* КОПИРОВАТЬ ПАРОЛЬ */
 
 function copyPassword(button) {
 
@@ -770,9 +742,7 @@ function copyPassword(button) {
 }
 
 
-/* ==========================================
-   КОПИРОВАТЬ APPLE ID
-   ========================================== */
+/* КОПИРОВАТЬ APPLE ID */
 
 function copyText(text, button) {
 
@@ -790,9 +760,7 @@ function copyText(text, button) {
 }
 
 
-/* ==========================================
-   ПРОСМОТР ФОТО
-   ========================================== */
+/* ПРОСМОТР ФОТО */
 
 function openImage(src) {
 
