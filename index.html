@@ -125,15 +125,24 @@ body {
     line-height: 1.55;
 }
 
+.step p + p {
+    margin-top: 12px;
+}
+
 /* SCREENSHOTS */
 
 .screenshot {
     width: 100%;
+    max-width: 100%;
     display: block;
     margin: 20px auto 4px;
     border-radius: 18px;
     box-shadow: 0 8px 25px rgba(0,0,0,.13);
     cursor: zoom-in;
+}
+
+.screenshot + .screenshot {
+    margin-top: 14px;
 }
 
 /* ACCOUNT */
@@ -214,6 +223,12 @@ body {
     margin-top: 18px;
     font-size: 16px;
     font-weight: 700;
+    transition: transform .15s ease, opacity .15s ease;
+}
+
+.button:active {
+    transform: scale(.98);
+    opacity: .8;
 }
 
 .button.light {
@@ -302,6 +317,8 @@ body {
     z-index: 10000;
 }
 
+/* MOBILE */
+
 @media(max-width:500px) {
 
     .hero h1 {
@@ -314,6 +331,14 @@ body {
 
     .screenshot {
         border-radius: 15px;
+    }
+
+    .data-value {
+        font-size: 14px;
+    }
+
+    .copy {
+        padding: 9px 9px;
     }
 }
 </style>
@@ -363,7 +388,7 @@ body {
 
     <div class="number">1</div>
 
-    <h2>Откройте настройки</h2>
+    <h2>Откройте настройки iPhone</h2>
 
     <p>
         Откройте приложение «Настройки» на вашем iPhone
@@ -373,7 +398,7 @@ body {
     <img
         class="screenshot"
         src="https://github.com/bosskin-pro/install-guide/releases/download/v1/IMG_8150.png"
-        alt="Шаг 1"
+        alt="Шаг 1 — Настройки"
         onclick="openImage(this.src)"
     >
 
@@ -397,7 +422,21 @@ body {
     <img
         class="screenshot"
         src="https://github.com/bosskin-pro/install-guide/releases/download/v1/IMG_8151.png"
-        alt="Шаг 2"
+        alt="Шаг 2 — Контент и покупки"
+        onclick="openImage(this.src)"
+    >
+
+    <img
+        class="screenshot"
+        src="https://github.com/bosskin-pro/install-guide/releases/download/v1/IMG_8152.png"
+        alt="Шаг 2 — Контент и покупки"
+        onclick="openImage(this.src)"
+    >
+
+    <img
+        class="screenshot"
+        src="https://github.com/bosskin-pro/install-guide/releases/download/v1/IMG_8153.png"
+        alt="Шаг 2 — Контент и покупки"
         onclick="openImage(this.src)"
     >
 
@@ -419,6 +458,8 @@ body {
 
     <div class="account">
 
+        <!-- APPLE ID -->
+
         <div class="data-box">
 
             <div class="data-label">
@@ -431,8 +472,10 @@ body {
                     vip.petroov@icloud.com
                 </div>
 
-                <button class="copy"
-                        onclick="copyText('vip.petroov@icloud.com', this)">
+                <button
+                    class="copy"
+                    onclick="copyText('vip.petroov@icloud.com', this)"
+                >
                     Скопировать
                 </button>
 
@@ -440,6 +483,8 @@ body {
 
         </div>
 
+
+        <!-- PASSWORD -->
 
         <div class="data-box">
 
@@ -452,18 +497,21 @@ body {
                 <div
                     class="data-value password"
                     id="password"
-                    data-password="ВСТАВЬ_СЮДА_ПАРОЛЬ"
                 >
                     ••••••••••••••••
                 </div>
 
-                <button class="show"
-                        onclick="togglePassword()">
+                <button
+                    class="show"
+                    onclick="togglePassword()"
+                >
                     Показать
                 </button>
 
-                <button class="copy"
-                        onclick="copyPassword(this)">
+                <button
+                    class="copy"
+                    onclick="copyPassword(this)"
+                >
                     Скопировать
                 </button>
 
@@ -473,9 +521,40 @@ body {
 
     </div>
 
+
+    <div class="warning">
+        🔐 После ввода данных Apple может запросить
+        дополнительное подтверждение входа.
+        Следуйте инструкциям, которые появятся на экране.
+    </div>
+
+
+    <!-- 4 PHOTOS -->
+
     <img
         class="screenshot"
-        src="https://github.com/bosskin-pro/install-guide/releases/download/v1/IMG_8152.png"
+        src="https://github.com/bosskin-pro/install-guide/releases/download/v1/IMG_8154.png"
+        alt="Шаг 3"
+        onclick="openImage(this.src)"
+    >
+
+    <img
+        class="screenshot"
+        src="https://github.com/bosskin-pro/install-guide/releases/download/v1/IMG_8156.png"
+        alt="Шаг 3"
+        onclick="openImage(this.src)"
+    >
+
+    <img
+        class="screenshot"
+        src="https://github.com/bosskin-pro/install-guide/releases/download/v1/IMG_8157.png"
+        alt="Шаг 3"
+        onclick="openImage(this.src)"
+    >
+
+    <img
+        class="screenshot"
+        src="https://github.com/bosskin-pro/install-guide/releases/download/v1/IMG_8158.png"
         alt="Шаг 3"
         onclick="openImage(this.src)"
     >
@@ -489,25 +568,24 @@ body {
 
     <div class="number">4</div>
 
-    <h2>Откройте App Store</h2>
+    <h2>Скачайте Boss of Bumper</h2>
 
     <p>
-        После входа откройте App Store и перейдите
-        на страницу приложения Boss of Bumper: Bike Race.
+        После входа в аккаунт откройте страницу
+        приложения Boss of Bumper: Bike Race
+        в App Store.
     </p>
 
-    <img
-        class="screenshot"
-        src="https://github.com/bosskin-pro/install-guide/releases/download/v1/IMG_8153.png"
-        alt="Шаг 4"
-        onclick="openImage(this.src)"
-    >
+    <p>
+        Нажмите кнопку загрузки и дождитесь полной
+        установки приложения.
+    </p>
 
     <a
         class="button"
         href="https://apps.apple.com/ru/app/boss-of-bumper-bike-race/id1485123371"
     >
-         Открыть приложение в App Store
+         Открыть Boss of Bumper в App Store
     </a>
 
 </section>
@@ -519,26 +597,17 @@ body {
 
     <div class="number">5</div>
 
-    <h2>Скачайте Boss of Bumper</h2>
+    <h2>Установите нужные приложения</h2>
 
     <p>
-        Нажмите кнопку загрузки в App Store и дождитесь
-        полного завершения установки приложения.
+        После установки Boss of Bumper вернитесь
+        в каталог и установите необходимые вам приложения.
     </p>
 
-    <img
-        class="screenshot"
-        src="https://github.com/bosskin-pro/install-guide/releases/download/v1/IMG_8154.png"
-        alt="Шаг 5"
-        onclick="openImage(this.src)"
-    >
-
-    <a
-        class="button"
-        href="https://apps.apple.com/ru/app/boss-of-bumper-bike-race/id1485123371"
-    >
-        Скачать приложение
-    </a>
+    <div class="warning">
+        📦 Установите все необходимые приложения,
+        прежде чем переходить к следующему шагу.
+    </div>
 
 </section>
 
@@ -549,28 +618,25 @@ body {
 
     <div class="number">6</div>
 
-    <h2>Установите нужные приложения</h2>
+    <h2>Вернитесь в свой аккаунт</h2>
 
     <p>
-        После установки Boss of Bumper вернитесь
-        в наш каталог и установите необходимые вам приложения.
+        После установки всех нужных приложений откройте
+        настройки iPhone → Apple Account →
+        «Контент и покупки».
+    </p>
+
+    <p>
+        Выйдите из предоставленного аккаунта и войдите
+        обратно в свой собственный Apple Account.
     </p>
 
     <img
         class="screenshot"
-        src="https://github.com/bosskin-pro/install-guide/releases/download/v1/IMG_8156.png"
-        alt="Шаг 6"
+        src="https://github.com/bosskin-pro/install-guide/releases/download/v1/IMG_8157.png"
+        alt="Шаг 6 — Возврат в свой аккаунт"
         onclick="openImage(this.src)"
     >
-
-    <a class="button light" href="../">
-        📦 Перейти к приложениям
-    </a>
-
-    <div class="warning">
-        ⏳ Дождитесь полной установки всех необходимых
-        приложений перед переходом к следующему шагу.
-    </div>
 
 </section>
 
@@ -581,53 +647,30 @@ body {
 
     <div class="number">7</div>
 
-    <h2>Вернитесь в свой аккаунт</h2>
-
-    <p>
-        После установки всех нужных приложений откройте
-        настройки iPhone → Apple Account →
-        «Контент и покупки».
-    </p>
-
-    <p style="margin-top:12px;">
-        Выйдите из предоставленного аккаунта и войдите
-        обратно в свой собственный Apple Account.
-    </p>
-
-    <img
-        class="screenshot"
-        src="https://github.com/bosskin-pro/install-guide/releases/download/v1/IMG_8157.png"
-        alt="Шаг 7"
-        onclick="openImage(this.src)"
-    >
-
-</section>
-
-
-<!-- STEP 8 -->
-
-<section class="step">
-
-    <div class="number">8</div>
-
     <h2>Удалите Boss of Bumper</h2>
 
     <p>
         После возвращения в свой Apple Account найдите
         приложение Boss of Bumper: Bike Race на экране
-        iPhone и удалите его.
+        iPhone.
+    </p>
+
+    <p>
+        Зажмите иконку приложения и выберите
+        <strong>«Удалить приложение»</strong>.
     </p>
 
     <img
         class="screenshot"
         src="https://github.com/bosskin-pro/install-guide/releases/download/v1/IMG_8158.png"
-        alt="Шаг 8"
+        alt="Шаг 7 — Удаление приложения"
         onclick="openImage(this.src)"
     >
 
     <div class="warning">
-        ✅ Готово! Вы вернулись в свой Apple Account,
-        а необходимые приложения установлены.
+        ✅ Готово! Нужные приложения установлены,
+        а ваш основной Apple Account снова используется
+        на iPhone.
     </div>
 
 </section>
@@ -663,13 +706,24 @@ body {
 
 <!-- IMAGE VIEWER -->
 
-<div class="viewer" id="viewer" onclick="closeImage()">
+<div
+    class="viewer"
+    id="viewer"
+    onclick="closeImage()"
+>
 
-    <button class="close" onclick="closeImage()">
+    <button
+        class="close"
+        onclick="closeImage()"
+    >
         ×
     </button>
 
-    <img id="viewerImage" src="" alt="Изображение">
+    <img
+        id="viewerImage"
+        src=""
+        alt="Изображение"
+    >
 
 </div>
 
@@ -683,19 +737,36 @@ body {
 const APP_PASSWORD = "70635964ALEx";
 
 
+/* ==========================================
+   ПОКАЗАТЬ / СКРЫТЬ ПАРОЛЬ
+   ========================================== */
+
+let passwordVisible = false;
+
 function togglePassword() {
 
-    const field = document.getElementById("password");
+    const field =
+        document.getElementById("password");
 
-    field.classList.toggle("visible");
+    passwordVisible = !passwordVisible;
 
-    if (field.classList.contains("visible")) {
+    if (passwordVisible) {
+
         field.textContent = APP_PASSWORD;
+        field.classList.add("visible");
+
     } else {
+
         field.textContent = "••••••••••••••••";
+        field.classList.remove("visible");
+
     }
 }
 
+
+/* ==========================================
+   КОПИРОВАТЬ ПАРОЛЬ
+   ========================================== */
 
 function copyPassword(button) {
 
@@ -706,10 +777,16 @@ function copyPassword(button) {
     button.textContent = "Скопировано ✓";
 
     setTimeout(function() {
+
         button.textContent = oldText;
+
     }, 1500);
 }
 
+
+/* ==========================================
+   КОПИРОВАТЬ APPLE ID
+   ========================================== */
 
 function copyText(text, button) {
 
@@ -720,7 +797,9 @@ function copyText(text, button) {
     button.textContent = "Скопировано ✓";
 
     setTimeout(function() {
+
         button.textContent = oldText;
+
     }, 1500);
 }
 
