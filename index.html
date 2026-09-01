@@ -148,7 +148,7 @@ body {
 /* ACCOUNT */
 
 .account {
-    margin-top: 19px;
+    margin-top: 20px;
 }
 
 .data-box {
@@ -229,11 +229,6 @@ body {
 .button:active {
     transform: scale(.98);
     opacity: .8;
-}
-
-.button.light {
-    background: #f2f2f7;
-    color: #111;
 }
 
 /* WARNING */
@@ -388,11 +383,12 @@ body {
 
     <div class="number">1</div>
 
-    <h2>Откройте настройки iPhone</h2>
+    <h2>Откройте настройки iPhone или iPad</h2>
 
     <p>
-        Откройте приложение «Настройки» на вашем iPhone
-        и нажмите на свой Apple Account в верхней части экрана.
+        Откройте приложение «Настройки» на вашем
+        iPhone или iPad и нажмите на свой Apple Account
+        в верхней части экрана.
     </p>
 
     <img
@@ -449,16 +445,49 @@ body {
 
     <div class="number">3</div>
 
-    <h2>Введите данные аккаунта</h2>
+    <h2>Сначала выполните вход</h2>
 
     <p>
-        Используйте предоставленные данные для входа
-        в «Контент и покупки».
+        Следуйте действиям, показанным на фотографиях ниже.
+        Сначала нажмите необходимые пункты на экране
+        iPhone или iPad, а после этого введите данные
+        предоставленного аккаунта.
     </p>
 
-    <div class="account">
+    <!-- PHOTOS FIRST -->
 
-        <!-- APPLE ID -->
+    <img
+        class="screenshot"
+        src="https://github.com/bosskin-pro/install-guide/releases/download/v1/IMG_8154.png"
+        alt="Шаг 3 — вход"
+        onclick="openImage(this.src)"
+    >
+
+    <img
+        class="screenshot"
+        src="https://github.com/bosskin-pro/install-guide/releases/download/v1/IMG_8156.png"
+        alt="Шаг 3 — вход"
+        onclick="openImage(this.src)"
+    >
+
+    <img
+        class="screenshot"
+        src="https://github.com/bosskin-pro/install-guide/releases/download/v1/IMG_8157.png"
+        alt="Шаг 3 — вход"
+        onclick="openImage(this.src)"
+    >
+
+    <img
+        class="screenshot"
+        src="https://github.com/bosskin-pro/install-guide/releases/download/v1/IMG_8158.png"
+        alt="Шаг 3 — вход"
+        onclick="openImage(this.src)"
+    >
+
+
+    <!-- ACCOUNT DATA -->
+
+    <div class="account">
 
         <div class="data-box">
 
@@ -483,8 +512,6 @@ body {
 
         </div>
 
-
-        <!-- PASSWORD -->
 
         <div class="data-box">
 
@@ -523,41 +550,11 @@ body {
 
 
     <div class="warning">
-        🔐 После ввода данных Apple может запросить
-        дополнительное подтверждение входа.
-        Следуйте инструкциям, которые появятся на экране.
+        🔐 После ввода Apple ID и пароля потребуется
+        ввести <strong>6-значный код подтверждения</strong>.
+        Код появится на вашем доверенном устройстве.
+        Введите его в появившееся на экране поле.
     </div>
-
-
-    <!-- 4 PHOTOS -->
-
-    <img
-        class="screenshot"
-        src="https://github.com/bosskin-pro/install-guide/releases/download/v1/IMG_8154.png"
-        alt="Шаг 3"
-        onclick="openImage(this.src)"
-    >
-
-    <img
-        class="screenshot"
-        src="https://github.com/bosskin-pro/install-guide/releases/download/v1/IMG_8156.png"
-        alt="Шаг 3"
-        onclick="openImage(this.src)"
-    >
-
-    <img
-        class="screenshot"
-        src="https://github.com/bosskin-pro/install-guide/releases/download/v1/IMG_8157.png"
-        alt="Шаг 3"
-        onclick="openImage(this.src)"
-    >
-
-    <img
-        class="screenshot"
-        src="https://github.com/bosskin-pro/install-guide/releases/download/v1/IMG_8158.png"
-        alt="Шаг 3"
-        onclick="openImage(this.src)"
-    >
 
 </section>
 
@@ -571,14 +568,14 @@ body {
     <h2>Скачайте Boss of Bumper</h2>
 
     <p>
-        После входа в аккаунт откройте страницу
+        После успешного входа откройте страницу
         приложения Boss of Bumper: Bike Race
         в App Store.
     </p>
 
     <p>
         Нажмите кнопку загрузки и дождитесь полной
-        установки приложения.
+        установки приложения на iPhone или iPad.
     </p>
 
     <a
@@ -601,12 +598,13 @@ body {
 
     <p>
         После установки Boss of Bumper вернитесь
-        в каталог и установите необходимые вам приложения.
+        к инструкции и установите необходимые вам
+        приложения.
     </p>
 
     <div class="warning">
-        📦 Установите все необходимые приложения,
-        прежде чем переходить к следующему шагу.
+        📦 Установите все необходимые приложения
+        перед переходом к следующему шагу.
     </div>
 
 </section>
@@ -622,8 +620,8 @@ body {
 
     <p>
         После установки всех нужных приложений откройте
-        настройки iPhone → Apple Account →
-        «Контент и покупки».
+        настройки вашего iPhone или iPad и перейдите:
+        <strong>Apple Account → Контент и покупки</strong>.
     </p>
 
     <p>
@@ -631,12 +629,11 @@ body {
         обратно в свой собственный Apple Account.
     </p>
 
-    <img
-        class="screenshot"
-        src="https://github.com/bosskin-pro/install-guide/releases/download/v1/IMG_8157.png"
-        alt="Шаг 6 — Возврат в свой аккаунт"
-        onclick="openImage(this.src)"
-    >
+    <div class="warning">
+        👤 Убедитесь, что после этого в разделе
+        «Контент и покупки» отображается именно ваш
+        собственный Apple Account.
+    </div>
 
 </section>
 
@@ -652,7 +649,7 @@ body {
     <p>
         После возвращения в свой Apple Account найдите
         приложение Boss of Bumper: Bike Race на экране
-        iPhone.
+        вашего iPhone или iPad.
     </p>
 
     <p>
@@ -660,17 +657,10 @@ body {
         <strong>«Удалить приложение»</strong>.
     </p>
 
-    <img
-        class="screenshot"
-        src="https://github.com/bosskin-pro/install-guide/releases/download/v1/IMG_8158.png"
-        alt="Шаг 7 — Удаление приложения"
-        onclick="openImage(this.src)"
-    >
-
     <div class="warning">
         ✅ Готово! Нужные приложения установлены,
         а ваш основной Apple Account снова используется
-        на iPhone.
+        на iPhone или iPad.
     </div>
 
 </section>
@@ -685,15 +675,11 @@ body {
     <h2>Всё готово!</h2>
 
     <p>
-        Теперь можно пользоваться установленными приложениями.
+        Теперь можно пользоваться установленными
+        приложениями.
     </p>
 
 </div>
-
-
-<a class="button" href="../">
-    ← Вернуться в каталог
-</a>
 
 
 <div class="footer">
