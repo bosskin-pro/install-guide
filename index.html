@@ -3,19 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-
 <title>Инструкция по установке</title>
-
 <style>
 * {
     box-sizing: border-box;
     -webkit-tap-highlight-color: transparent;
 }
-
 html {
     scroll-behavior: smooth;
 }
-
 body {
     margin: 0;
     background: #f5f5f7;
@@ -24,18 +20,49 @@ body {
                  "SF Pro Display", "SF Pro Text",
                  Arial, sans-serif;
 }
-
 .container {
     max-width: 720px;
     margin: auto;
     padding: 18px 14px 60px;
 }
-
+.contacts {
+    background: #fff;
+    border-radius: 21px;
+    padding: 17px;
+    margin-bottom: 17px;
+    box-shadow: 0 4px 18px rgba(0,0,0,.05);
+    text-align: center;
+}
+.contacts-title {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+.contacts-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 9px;
+}
+.contact {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #111;
+    background: #f2f2f7;
+    border-radius: 13px;
+    padding: 10px 13px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.contact:active {
+    opacity: .7;
+}
 .hero {
     text-align: center;
     padding: 25px 8px 28px;
 }
-
 .logo {
     width: 76px;
     height: 76px;
@@ -49,21 +76,18 @@ body {
     font-size: 37px;
     box-shadow: 0 12px 30px rgba(0,0,0,.15);
 }
-
 .hero h1 {
     margin: 0 0 10px;
     font-size: 32px;
     line-height: 1.15;
     letter-spacing: -1px;
 }
-
 .hero p {
     margin: 0;
     color: #6e6e73;
     font-size: 16px;
     line-height: 1.5;
 }
-
 .notice {
     background: #fff;
     border-radius: 21px;
@@ -71,19 +95,16 @@ body {
     margin-bottom: 17px;
     box-shadow: 0 4px 18px rgba(0,0,0,.05);
 }
-
 .notice-title {
     font-size: 17px;
     font-weight: 700;
     margin-bottom: 7px;
 }
-
 .notice-text {
     color: #6e6e73;
     font-size: 15px;
     line-height: 1.5;
 }
-
 .step {
     background: #fff;
     border-radius: 23px;
@@ -91,7 +112,6 @@ body {
     margin-bottom: 17px;
     box-shadow: 0 4px 18px rgba(0,0,0,.05);
 }
-
 .number {
     width: 39px;
     height: 39px;
@@ -104,24 +124,20 @@ body {
     font-weight: 700;
     margin-bottom: 15px;
 }
-
 .step h2 {
     font-size: 22px;
     line-height: 1.25;
     margin: 0 0 9px;
 }
-
 .step p {
     margin: 0;
     color: #6e6e73;
     font-size: 16px;
     line-height: 1.55;
 }
-
 .step p + p {
     margin-top: 12px;
 }
-
 .screenshot {
     width: 100%;
     max-width: 100%;
@@ -131,34 +147,28 @@ body {
     box-shadow: 0 8px 25px rgba(0,0,0,.13);
     cursor: zoom-in;
 }
-
 .screenshot + .screenshot {
     margin-top: 14px;
 }
-
 .account {
     margin-top: 20px;
 }
-
 .data-box {
     background: #f2f2f7;
     border-radius: 15px;
     padding: 13px;
     margin-top: 10px;
 }
-
 .data-label {
     font-size: 12px;
     color: #6e6e73;
     margin-bottom: 6px;
 }
-
 .data-line {
     display: flex;
     align-items: center;
     gap: 8px;
 }
-
 .data-value {
     flex: 1;
     min-width: 0;
@@ -168,7 +178,6 @@ body {
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-
 .copy {
     border: 0;
     background: #111;
@@ -180,16 +189,13 @@ body {
     cursor: pointer;
     white-space: nowrap;
 }
-
 .password {
     filter: blur(5px);
     transition: .2s;
 }
-
 .password.visible {
     filter: none;
 }
-
 .show {
     border: 0;
     background: transparent;
@@ -198,7 +204,6 @@ body {
     cursor: pointer;
     white-space: nowrap;
 }
-
 .button {
     display: block;
     text-decoration: none;
@@ -212,12 +217,10 @@ body {
     font-weight: 700;
     transition: transform .15s ease, opacity .15s ease;
 }
-
 .button:active {
     transform: scale(.98);
     opacity: .8;
 }
-
 .warning {
     background: #fff4d6;
     border-radius: 15px;
@@ -226,28 +229,23 @@ body {
     font-size: 14px;
     line-height: 1.5;
 }
-
 .finish {
     text-align: center;
     padding: 28px 12px 10px;
 }
-
 .finish-icon {
     font-size: 42px;
     margin-bottom: 10px;
 }
-
 .finish h2 {
     margin: 0 0 8px;
     font-size: 25px;
 }
-
 .finish p {
     margin: 0;
     color: #6e6e73;
     line-height: 1.5;
 }
-
 .footer {
     text-align: center;
     color: #8e8e93;
@@ -255,7 +253,6 @@ body {
     line-height: 1.5;
     margin-top: 25px;
 }
-
 .viewer {
     display: none;
     position: fixed;
@@ -266,18 +263,15 @@ body {
     justify-content: center;
     padding: 15px;
 }
-
 .viewer img {
     max-width: 100%;
     max-height: 95vh;
     object-fit: contain;
     border-radius: 12px;
 }
-
 .viewer.active {
     display: flex;
 }
-
 .close {
     position: fixed;
     top: 20px;
@@ -290,500 +284,361 @@ body {
     font-size: 23px;
     z-index: 10000;
 }
-
 @media(max-width:500px) {
-
     .hero h1 {
         font-size: 29px;
     }
-
     .step {
         padding: 19px;
     }
-
     .screenshot {
         border-radius: 15px;
     }
-
     .data-value {
         font-size: 14px;
     }
-
     .copy {
         padding: 9px 9px;
     }
 }
 </style>
 </head>
-
 <body>
-
 <div class="container">
-
+<!-- КОНТАКТЫ -->
+<div class="contacts">
+    <div class="contacts-title">
+        📞 Связь
+    </div>
+    <div class="contacts-list">
+        <a
+            class="contact"
+            href="https://t.me/vip_petroov"
+            target="_blank"
+            rel="noopener"
+        >
+            Telegram: @vip_petroov
+        </a>
+        <a
+            class="contact"
+            href="https://vk.com/vip.petroov"
+            target="_blank"
+            rel="noopener"
+        >
+            VK: vip.petroov
+        </a>
+        <a
+            class="contact"
+            href="tel:+79063417366"
+        >
+            Телефон: 8-906-341-73-66
+        </a>
+    </div>
+</div>
 <header class="hero">
-
     <div class="logo">📱</div>
-
     <h1>Как установить приложения</h1>
-
     <p>
         Пошаговая инструкция для iPhone и iPad.
         Пожалуйста, выполняйте все действия по порядку.
     </p>
-
 </header>
-
-
 <div class="notice">
-
     <div class="notice-title">
         ⚠️ Важно
     </div>
-
     <div class="notice-text">
         Для установки сначала потребуется войти в
         предоставленный Apple Account в разделе
         «Контент и покупки». После установки нужных
         приложений необходимо вернуться в свой аккаунт.
     </div>
-
 </div>
-
-
 <!-- ШАГ 1 -->
-
 <section class="step">
-
     <div class="number">1</div>
-
     <h2>Откройте настройки iPhone или iPad</h2>
-
     <p>
         Откройте приложение «Настройки» на вашем
         iPhone или iPad и нажмите на свой Apple Account
         в верхней части экрана.
     </p>
-
     <img
         class="screenshot"
         src="https://github.com/bosskin-pro/install-guide/releases/download/v1/IMG_8150.png"
         alt="Шаг 1 — Настройки"
         onclick="openImage(this.src)"
     >
-
 </section>
-
-
 <!-- ШАГ 2 -->
-
 <section class="step">
-
     <div class="number">2</div>
-
     <h2>Откройте «Контент и покупки»</h2>
-
     <p>
         Найдите раздел «Контент и покупки».
         <strong>Выйдите со своего аккаунта.</strong>
     </p>
-
     <img
         class="screenshot"
         src="https://github.com/bosskin-pro/install-guide/releases/download/v1/IMG_8151.png"
         alt="Шаг 2"
         onclick="openImage(this.src)"
     >
-
     <img
         class="screenshot"
         src="https://github.com/bosskin-pro/install-guide/releases/download/v1/IMG_8152.png"
         alt="Шаг 2"
         onclick="openImage(this.src)"
     >
-
     <img
         class="screenshot"
         src="https://github.com/bosskin-pro/install-guide/releases/download/v1/IMG_8153.png"
         alt="Шаг 2"
         onclick="openImage(this.src)"
     >
-
 </section>
-
-
 <!-- ШАГ 3 -->
-
 <section class="step">
-
     <div class="number">3</div>
-
     <h2>Введите данные аккаунта</h2>
-
     <p>
         Сначала выполните действия, показанные
         на фотографиях ниже. После этого введите
         данные предоставленного аккаунта.
     </p>
-
-
     <!-- ФОТОГРАФИИ -->
-
     <img
         class="screenshot"
         src="https://github.com/bosskin-pro/install-guide/releases/download/v1/IMG_8154.png"
         alt="Шаг 3"
         onclick="openImage(this.src)"
     >
-
     <img
         class="screenshot"
         src="https://github.com/bosskin-pro/install-guide/releases/download/v1/IMG_8156.png"
         alt="Шаг 3"
         onclick="openImage(this.src)"
     >
-
     <img
         class="screenshot"
         src="https://github.com/bosskin-pro/install-guide/releases/download/v1/IMG_8157.png"
         alt="Шаг 3"
         onclick="openImage(this.src)"
     >
-
     <img
         class="screenshot"
         src="https://github.com/bosskin-pro/install-guide/releases/download/v1/IMG_8158.png"
         alt="Шаг 3"
         onclick="openImage(this.src)"
     >
-
-
     <!-- ДАННЫЕ АККАУНТА -->
-
     <div class="account">
-
         <div class="data-box">
-
             <div class="data-label">
                 Apple ID
             </div>
-
             <div class="data-line">
-
                 <div class="data-value">
                     vip.petroov@icloud.com
                 </div>
-
                 <button
                     class="copy"
                     onclick="copyText('vip.petroov@icloud.com', this)"
                 >
                     Скопировать
                 </button>
-
             </div>
-
         </div>
-
-
         <div class="data-box">
-
             <div class="data-label">
                 Пароль
             </div>
-
             <div class="data-line">
-
                 <div
                     class="data-value password"
                     id="password"
                 >
                     ••••••••••••••••
                 </div>
-
                 <button
                     class="show"
                     onclick="togglePassword()"
                 >
                     Показать
                 </button>
-
                 <button
                     class="copy"
                     onclick="copyPassword(this)"
                 >
                     Скопировать
                 </button>
-
             </div>
-
         </div>
-
     </div>
-
-
     <div class="warning">
         🔐 После ввода Apple ID и пароля потребуется
         ввести <strong>6-значный код подтверждения</strong>.
         Код подтверждения я отправлю вам в переписке.
         Введите полученный код в появившееся на экране поле.
     </div>
-
 </section>
-
-
 <!-- ШАГ 4 -->
-
 <section class="step">
-
     <div class="number">4</div>
-
     <h2>Скачайте Boss of Bumper</h2>
-
     <p>
         После успешного входа откройте страницу
         приложения Boss of Bumper: Bike Race
         в App Store.
     </p>
-
     <p>
         Нажмите кнопку загрузки и дождитесь полной
         установки приложения на iPhone или iPad.
     </p>
-
     <a
         class="button"
         href="https://apps.apple.com/ru/app/boss-of-bumper-bike-race/id1485123371"
     >
          Открыть Boss of Bumper в App Store
     </a>
-
 </section>
-
-
 <!-- ШАГ 5 -->
-
 <section class="step">
-
     <div class="number">5</div>
-
     <h2>Установите нужные приложения</h2>
-
     <p>
         После установки Boss of Bumper перейдите
         по ссылкам, которые вам скинули и установите
         необходимые вам приложения.
     </p>
-
     <p>
         После установки обязательно запустите
         приложения и убедитесь, что они работают.
     </p>
-
     <div class="warning">
         📦 Установите и запустите все необходимые
         приложения перед переходом к следующему шагу.
     </div>
-
 </section>
-
-
 <!-- ШАГ 6 -->
-
 <section class="step">
-
     <div class="number">6</div>
-
     <h2>Вернитесь в свой аккаунт</h2>
-
     <p>
         После установки и запуска всех нужных приложений
         откройте настройки вашего iPhone или iPad и перейдите:
         <strong>Apple Account → Контент и покупки</strong>.
     </p>
-
     <p>
         Выйдите из предоставленного аккаунта и войдите
         обратно в свой собственный Apple Account.
     </p>
-
     <div class="warning">
         👤 Убедитесь, что после этого в разделе
         «Контент и покупки» отображается именно ваш
         собственный Apple Account.
     </div>
-
 </section>
-
-
 <!-- ШАГ 7 -->
-
 <section class="step">
-
     <div class="number">7</div>
-
     <h2>Удалите Boss of Bumper</h2>
-
     <p>
         После возвращения в свой Apple Account найдите
         приложение Boss of Bumper: Bike Race на экране
         вашего iPhone или iPad.
     </p>
-
     <p>
         Зажмите иконку приложения и выберите
         <strong>«Удалить приложение»</strong>.
     </p>
-
     <div class="warning">
         ✅ Готово! Нужные приложения установлены,
         а ваш основной Apple Account снова используется
         на iPhone или iPad.
     </div>
-
 </section>
-
-
 <!-- ЗАВЕРШЕНИЕ -->
-
 <div class="finish">
-
     <div class="finish-icon">🎉</div>
-
     <h2>Всё готово!</h2>
-
     <p>
         Теперь можно пользоваться установленными
         приложениями.
     </p>
-
 </div>
-
-
 <div class="footer">
     Инструкция по установке приложений<br>
     Для iPhone и iPad
 </div>
-
 </div>
-
-
 <!-- ПРОСМОТР ФОТО -->
-
 <div
     class="viewer"
     id="viewer"
     onclick="closeImage()"
 >
-
     <button
         class="close"
         onclick="closeImage()"
     >
         ×
     </button>
-
     <img
         id="viewerImage"
         src=""
         alt="Изображение"
     >
-
 </div>
-
-
 <script>
-
 /* ПАРОЛЬ */
-
 const APP_PASSWORD = "70635964ALEx";
-
-
 /* ПОКАЗАТЬ / СКРЫТЬ ПАРОЛЬ */
-
 let passwordVisible = false;
-
 function togglePassword() {
-
     const field =
         document.getElementById("password");
-
     passwordVisible = !passwordVisible;
-
     if (passwordVisible) {
-
         field.textContent = APP_PASSWORD;
         field.classList.add("visible");
-
     } else {
-
         field.textContent = "••••••••••••••••";
         field.classList.remove("visible");
-
     }
 }
-
-
 /* КОПИРОВАТЬ ПАРОЛЬ */
-
 function copyPassword(button) {
-
     navigator.clipboard.writeText(APP_PASSWORD);
-
     const oldText = button.textContent;
-
     button.textContent = "Скопировано ✓";
-
     setTimeout(function() {
-
         button.textContent = oldText;
-
     }, 1500);
 }
-
-
 /* КОПИРОВАТЬ APPLE ID */
-
 function copyText(text, button) {
-
     navigator.clipboard.writeText(text);
-
     const oldText = button.textContent;
-
     button.textContent = "Скопировано ✓";
-
     setTimeout(function() {
-
         button.textContent = oldText;
-
     }, 1500);
 }
-
-
 /* ПРОСМОТР ФОТО */
-
 function openImage(src) {
-
     const viewer =
         document.getElementById("viewer");
-
     const image =
         document.getElementById("viewerImage");
-
     image.src = src;
-
     viewer.classList.add("active");
 }
-
-
 function closeImage() {
-
     document
         .getElementById("viewer")
         .classList.remove("active");
-
 }
-
 </script>
-
 </body>
 </html>
